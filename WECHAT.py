@@ -8,6 +8,7 @@ import demjson
 import os
 import time
 
+#timeStamp是时间戳
 def get_content(url,timeStamp):
 	resp = request.urlopen(url)
 	html = resp.read()
@@ -69,7 +70,7 @@ def get_content(url,timeStamp):
 #	get_content(url_input,1507644415)
 
 #json方式爬取
-#f=open('rmsp.txt', 'r',encoding="ISO-8859-1")
+#f=open('json.txt', 'r',encoding="ISO-8859-1")
 #jsonstr = f.read()
 #datas = json.loads(jsonstr)
 #print(type(datas[0]['app_msg_list'][0]['link']))
